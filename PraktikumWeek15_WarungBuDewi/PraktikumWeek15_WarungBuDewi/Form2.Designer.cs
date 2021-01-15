@@ -40,26 +40,30 @@
             this.labelTax = new System.Windows.Forms.Label();
             this.labelDiscount = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
+            this.labelpersen = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // checkBoxDiscount
             // 
             this.checkBoxDiscount.AutoSize = true;
-            this.checkBoxDiscount.Location = new System.Drawing.Point(13, 13);
+            this.checkBoxDiscount.Location = new System.Drawing.Point(13, 12);
             this.checkBoxDiscount.Name = "checkBoxDiscount";
             this.checkBoxDiscount.Size = new System.Drawing.Size(82, 17);
             this.checkBoxDiscount.TabIndex = 0;
             this.checkBoxDiscount.Text = "DISCOUNT";
             this.checkBoxDiscount.UseVisualStyleBackColor = true;
+            this.checkBoxDiscount.CheckedChanged += new System.EventHandler(this.checkBoxDiscount_CheckedChanged);
             // 
             // labelInput
             // 
             this.labelInput.AutoSize = true;
             this.labelInput.Location = new System.Drawing.Point(46, 56);
             this.labelInput.Name = "labelInput";
-            this.labelInput.Size = new System.Drawing.Size(177, 13);
+            this.labelInput.Size = new System.Drawing.Size(37, 13);
             this.labelInput.TabIndex = 1;
-            this.labelInput.Text = "Input                                              %";
+            this.labelInput.Text = "Input  ";
+            this.labelInput.Visible = false;
+            this.labelInput.Click += new System.EventHandler(this.labelInput_Click);
             // 
             // textBox1
             // 
@@ -67,6 +71,8 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 2;
+            this.textBox1.Visible = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // buttonCalculate
             // 
@@ -151,11 +157,22 @@
             this.labelTotal.TabIndex = 11;
             this.labelTotal.Text = "0";
             // 
+            // labelpersen
+            // 
+            this.labelpersen.AutoSize = true;
+            this.labelpersen.Location = new System.Drawing.Point(198, 56);
+            this.labelpersen.Name = "labelpersen";
+            this.labelpersen.Size = new System.Drawing.Size(15, 13);
+            this.labelpersen.TabIndex = 12;
+            this.labelpersen.Text = "%";
+            this.labelpersen.Visible = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelpersen);
             this.Controls.Add(this.labelTotal);
             this.Controls.Add(this.labelDiscount);
             this.Controls.Add(this.labelTax);
@@ -170,6 +187,7 @@
             this.Controls.Add(this.checkBoxDiscount);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,5 +207,6 @@
         private System.Windows.Forms.Label labelTax;
         private System.Windows.Forms.Label labelDiscount;
         private System.Windows.Forms.Label labelTotal;
+        private System.Windows.Forms.Label labelpersen;
     }
 }

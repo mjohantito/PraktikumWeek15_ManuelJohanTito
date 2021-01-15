@@ -323,11 +323,14 @@ namespace PraktikumWeek15_WarungBuDewi
             else
             {
                 buttonDelete.Enabled = true;
-                listBoxNamaItems.Items.Remove(listBoxNamaItems.SelectedItem);
-                listBoxNamaItems.Items.Remove(listBoxHargaItems.SelectedItem);
+                int selected = listBoxNamaItems.SelectedIndex;
+                listBoxNamaItems.Items.RemoveAt(selected);
+                listBoxHargaItems.Items.RemoveAt(selected);
+                if (listBoxNamaItems.Items.Count == 0)
+                {
+                    buttonDelete.Enabled = false;
+                }
             }
-
-
         }
 
         private void listBoxNamaItems_SelectedIndexChanged(object sender, EventArgs e)
@@ -335,16 +338,23 @@ namespace PraktikumWeek15_WarungBuDewi
             
         }
 
+        public static int total = 0;
         private void buttonCheckOut_Click(object sender, EventArgs e)
         {
             if (listBoxNamaItems.Items.Count == 0)
             {
                 MessageBox.Show("Pilih menuuu!!");
             }
-            else if (listBoxNamaItems.Items != null)
+            else if (listBoxNamaItems.Items.Count != 0)
             {
+                
+                for (int z = 0; z < listBoxNamaItems.Items.Count; z++)
+                {
+                    total += Convert.ToInt32(listBoxHargaItems.Items[z]);
+                }
                 var Form2 = new Form2();
                 Form2.ShowDialog();
+                this.Hide();
             }
         }
 
@@ -352,5 +362,6 @@ namespace PraktikumWeek15_WarungBuDewi
         {
             
         }
+        
     }
 }
