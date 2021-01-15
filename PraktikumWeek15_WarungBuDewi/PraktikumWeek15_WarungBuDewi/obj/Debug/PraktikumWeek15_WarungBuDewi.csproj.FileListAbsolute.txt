@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\PraktikumWeek15_WarungBuDewi\PraktikumWeek15_WarungBuDewi\bin\Debug\PraktikumWeek15_WarungBuDewi.exe.config
+C:\Users\User\source\repos\PraktikumWeek15_WarungBuDewi\PraktikumWeek15_WarungBuDewi\bin\Debug\PraktikumWeek15_WarungBuDewi.exe
+C:\Users\User\source\repos\PraktikumWeek15_WarungBuDewi\PraktikumWeek15_WarungBuDewi\bin\Debug\PraktikumWeek15_WarungBuDewi.pdb
+C:\Users\User\source\repos\PraktikumWeek15_WarungBuDewi\PraktikumWeek15_WarungBuDewi\obj\Debug\PraktikumWeek15_WarungBuDewi.csprojAssemblyReference.cache
+C:\Users\User\source\repos\PraktikumWeek15_WarungBuDewi\PraktikumWeek15_WarungBuDewi\obj\Debug\PraktikumWeek15_WarungBuDewi.Form1.resources
+C:\Users\User\source\repos\PraktikumWeek15_WarungBuDewi\PraktikumWeek15_WarungBuDewi\obj\Debug\PraktikumWeek15_WarungBuDewi.Properties.Resources.resources
+C:\Users\User\source\repos\PraktikumWeek15_WarungBuDewi\PraktikumWeek15_WarungBuDewi\obj\Debug\PraktikumWeek15_WarungBuDewi.csproj.GenerateResource.cache
+C:\Users\User\source\repos\PraktikumWeek15_WarungBuDewi\PraktikumWeek15_WarungBuDewi\obj\Debug\PraktikumWeek15_WarungBuDewi.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\PraktikumWeek15_WarungBuDewi\PraktikumWeek15_WarungBuDewi\obj\Debug\PraktikumWeek15_WarungBuDewi.exe
+C:\Users\User\source\repos\PraktikumWeek15_WarungBuDewi\PraktikumWeek15_WarungBuDewi\obj\Debug\PraktikumWeek15_WarungBuDewi.pdb
+C:\Users\User\source\repos\PraktikumWeek15_WarungBuDewi\PraktikumWeek15_WarungBuDewi\obj\Debug\PraktikumWeek15_WarungBuDewi.Form2.resources
